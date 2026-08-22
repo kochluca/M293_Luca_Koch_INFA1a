@@ -34,11 +34,47 @@
 
   <main>
 
-    <h1>Kontakt</h1>
+    <section class="contact-section">
+      <h1>Kontakt</h1>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Dein Name</label>
+          <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+          <label for="nachricht">Nachricht</label>
+          <textarea  id="nachricht" name="nachricht" rows="5"></textarea>
+        </div>
+
+        <div class="form-group radio-group">
+          <label>Was denkst du über<br>unsere Preise?</label>
+
+          <div class="radio-options">
+            <label><input type="radio" name="preise" value="super_fair" checked> super fair </label>
+            <label><input type="radio" name="preise" value="okay"> okay </label>
+            <label><input type="radio" name="preise" value="teuer"> teuer </label>
+          </div>
+
+        </div>
+
+        <div class="button-container">
+          <button type="submit">Absenden</button>
+        </div>
+        <!--Wichtig noch die danke sagen message hineincoden und auch sehr wichig alle daten wenn möglich löschen nach absenden!!!!!!!!!!!!!!-->
+
+      </form>
+
+</section>
 
   </main>
 
-
+  
   <footer>
     <h4>Öffnungszeiten</h4>
     <p>
