@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: larger;
+  font-weight: bold;
+}
+
+header {
+  background: rgb(39, 25, 139);
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-index a:hover {
+  text-decoration: underline;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 60px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.header-index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-index {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.title-index img {
+  padding-top: 20px;
+  width: 50%;
+  height: auto;
+  display: inline-block;
+}
+
+footer {
+  gap: 20px;
+  background: rgb(39, 25, 139);
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer-index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Media sachen einfügen*/
