@@ -208,3 +208,136 @@ footer {
 .zitat {
   font-style: italic;
 }
+
+.title-index {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title-index img {
+  max-width: 100%;
+  height: auto;
+}
+
+.category-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.category-title {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-family: sans-serif;
+}
+
+.contact-section h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  width: 180px;
+  font-size: 0.95rem;
+  color: #000;
+  padding-top: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  flex: 1;
+  border: 1px solid #000;
+  border-radius: 0;
+  padding: 8px;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.radio-group {
+  align-items: center;
+}
+
+.radio-options {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.radio-options label {
+  width: auto;
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.radio-options input[type="radio"] {
+  accent-color: #241d85;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.button-container {
+  padding-left: 180px;
+  margin-top: 25px;
+}
+
+.button-container button {
+  background-color: #241d85;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #1a1463;
+}
+
+@media (max-width: 650px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-group label {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .radio-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .button-container {
+    padding-left: 0;
+  }
+}

@@ -11,7 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <header>
@@ -47,58 +46,80 @@
 
     <main class="container">
       <article class="title-index">
-        <h1>Welcome to Tony's Elektro Schuppen</h1>
+        <h1 class="titelsmart">Welcome to Tony's Elektro Schuppen</h1>
         <img
           src="assets/tonys-pizza-schuppen.png"
           alt="Tony's Elektro Schuppen als Laden"
         />
       </article>
-      <!-- Für CSS alle heights von den bildern entfernen da alle height usw. im CSS gesagt wird wie es aussehen soll -->
-      <article>
-        <a href="html-Seiten/smartphones.html"
-          ><img src="assets/smartphone.webp" height="200" alt="Smartphones" />
-          <h2>Smartphones</h2></a
-        >
-      </article>
 
-      <article>
-        <a href="html-Seiten/tablets.html"
-          ><img src="assets/tablet2.webp" height="200" alt="Tablets" />
-          <h2>Tablets</h2></a
-        >
-      </article>
+      <div class="product-grid">
+        <!-- Smartphones -->
+        <article class="product-card">
+          <a href="html-Seiten/smartphones.html" class="category-link">
+            <div class="image-box">
+              <img
+                class="phonepictures"
+                src="assets/smartphone.webp"
+                alt="Smartphones"
+              />
+            </div>
+            <h2 class="category-title">Smartphones</h2>
+          </a>
+        </article>
 
-      <article>
-        <a href="html-Seiten/laptops.html"
-          ><img src="assets/laptop2.webp" height="200" alt="Laptops" />
-          <h2>Laptops</h2>
-        </a>
-      </article>
+        <!-- Tablets -->
+        <article class="product-card">
+          <a href="html-Seiten/tablets.html" class="category-link">
+            <div class="image-box">
+              <img
+                class="phonepictures"
+                src="assets/tablet2.webp"
+                alt="Tablets"
+              />
+            </div>
+            <h2 class="category-title">Tablets</h2>
+          </a>
+        </article>
+
+        <!-- Laptops -->
+        <article class="product-card">
+          <a href="html-Seiten/laptops.html" class="category-link">
+            <div class="image-box">
+              <img
+                class="phonepictures"
+                src="assets/laptop2.webp"
+                alt="Laptops"
+              />
+            </div>
+            <h2 class="category-title">Laptops</h2>
+          </a>
+        </article>
+      </div>
     </main>
 
     <footer>
       <div class="container">
         <article class="footer-index">
           <p>
-            <span class="oeffnung">Öffnungszeiten</span><br />
+            Öffnungszeiten <br />
             Mo - Do: 11 - 18:30 Uhr <br />
             Fr - Sa: 11 - 17:00 Uhr <br />
             So: geschlossen
           </p>
-
-          <p class="zitat">
-            “Bei Tony's Elektroschuppen geht es nicht nur um <br />
+          <p>
+            "Bei Tony's Elektroschuppen geht es nicht nur um <br />
             Geräte, sondern um die Menschen dahinter: Ich <br />
-            liebe es, Ihnen die Technik zu zeigen, die ihr Leben <br />
-            bereichert.” <br />
-            - Tony
+            liebe es, Ihnen die Technik u zeigen, die ihr Leben <br />
+            bereichert. <br />
+            - Tony"
           </p>
 
-          <p class="address">
-            <span class="oeffnung">Adresse</span> <br />
+          <p>
+            Adresse <br />
             Tony's Elektro Schuppen <br />
             Musterstrasse 22 <br />
-            6456 Musterhausen
+            9459 Musterhausen
           </p>
         </article>
       </div>
