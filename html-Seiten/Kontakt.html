@@ -81,9 +81,32 @@
           </div>
 
           <div class="button-container">
-            <button type="submit">Absenden</button>
+            <button
+              type="button"
+              onclick="document.getElementById('meinPopup').showModal()"
+            >
+              Absenden
+            </button>
+            <dialog id="meinPopup">
+              <h2>Danke!</h2>
+              <br />
+              <p>
+                Danke vielmals für Ihre Rückmeldung, <br />
+                hoffentlich hatten sie einen guten Aufenthalt. Wir würden uns
+                <br />
+                freuen Sie wieder einmal bei uns begrüssen zu dürfen.
+              </p>
+
+              <button
+                onclick="
+                  document.getElementById('meinPopup').close();
+                  window.location.href = '/html-Seiten/kontakt.html';
+                "
+              >
+                X
+              </button>
+            </dialog>
           </div>
-          <!--Wichtig noch die danke sagen message hineincoden und auch sehr wichig alle daten wenn möglich löschen nach absenden!!!!!!!!!!!!!!-->
         </form>
       </section>
     </main>
