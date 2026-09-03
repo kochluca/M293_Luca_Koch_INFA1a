@@ -104,7 +104,6 @@ body {
   cursor: pointer;
 }
 
-/* Dünnerer Text unten */
 .description {
   font-weight: 300;
   font-size: 0.8rem;
@@ -245,6 +244,8 @@ footer {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .form-group {
