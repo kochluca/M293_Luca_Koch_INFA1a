@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
     <link rel="stylesheet" href="../styles.css" />
-    <script src="script.js" defer></script>
+    <script src="../script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -82,12 +82,7 @@
           </div>
 
           <div class="button-container">
-            <button
-              type="button"
-              onclick="document.getElementById('meinPopup').showModal()"
-            >
-              Absenden
-            </button>
+            <button type="button" class="SendButton">Absenden</button>
             <dialog id="meinPopup">
               <h2>Danke!</h2>
               <br />
@@ -98,14 +93,7 @@
                 freuen Sie wieder einmal bei uns begrüssen zu dürfen.
               </p>
 
-              <button
-                onclick="
-                  document.getElementById('meinPopup').close();
-                  window.location.href = 'kontakt.html';
-                "
-              >
-                X
-              </button>
+              <button type="button" id="close-Button">X</button>
             </dialog>
           </div>
         </form>
