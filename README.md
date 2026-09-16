@@ -7,3 +7,6 @@ sodass ich auch davon lerne und nicht nur alles copy paste. Im Kontakt file habe
 Um das Javascript erfolgreich funktionieren zu lassen habe ich auch KI als Hilfsmittel genutzt, weil ich nachdem ich selber angefangen habe zu coden mehrere Fehlermeldungen in der Console hatte. Danach habe ich die Offensichtlichen Fehler verbessert aber es hatte trotzdem noch mehrere Fehler. Deswegen habe ich das so erfolgreich gelöst.
 
 Ich habe auch KI benutzt, weil ich nicht gewusst habe, wie man nur ein Teil von dem Javascript Code auf einer HTML Seite anzeigt. Ich habe auf w3schools.com nach einer Lösung gesucht aber ich wurde leider nicht Fündig. Deswegen habe ich bei diesem Beispiel den Code von der KI abgeschrieben, nachdem die KI mir die Funktion des Codes erklärt hat.
+
+
+Mein Video: https://github.com/user-attachments/assets/db475e1a-1824-413f-8636-3131f5665fd5
