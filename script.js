@@ -1,28 +1,3 @@
-//Button um abzusenden
-const myFormular = document.querySelector("form");
-
-myFormular?.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const data = new FormData(myFormular);
-
-  data.forEach((wert, name) => {
-    console.log(`${name}: ${wert}`);
-  });
-
-  const popup = document.getElementById("meinPopup");
-  popup.showModal();
-
-  myFormular.reset();
-});
-
-//Button für Popup schleissung
-const closeButton = document.getElementById("close-Button");
-closeButton?.addEventListener("click", () => {
-  const popup = document.getElementById("meinPopup");
-  popup.close();
-});
-
 //Produkte und Bilder usw. mit API fetchen
 
 //Smartphones
@@ -36,25 +11,26 @@ const getSmartphoneProducts = async () => {
   const products = data.products;
   console.log(products);
 
-  const productList = document.querySelector();
+  const productList = document.querySelector(".product-grid");
+  productList.innerHTML = "";
 
   for (let i = 0; i < products.length; i++) {
     const currentProduct = products[i];
     console.log(currentProduct);
-    productList.innerHTML = `
-    HTML CODE!!!!!
+
+    productList.innerHTML += `
     <article class="product-card">
           <div class="image-box">
             <img
               class="phonepictures"
-              src="/assets/smartphone.webp"
-              alt="iPhone 5s"
+              src="${currentProduct.thumbnail}"
+              alt=${currentProduct.title}}
             />
           </div>
           <div class="product-header">
-            <h2>iPhone 5s</h2>
+            <h2>${currentProduct.title}</h2>
             <div class="price-group">
-              <span class="price">649 CHF</span>
+              <span class="price">${currentProduct.price}</span>
               <img src="/assets/cart.png" class="cart-icon" alt="Warenkorb" />
             </div>
           </div>
@@ -62,23 +38,112 @@ const getSmartphoneProducts = async () => {
             <option value="" disabled selected hidden>
               Speicherplatz auswählen
             </option>
-            <option value="16gb">16 GB</option>
             <option value="32gb">32 GB</option>
             <option value="64gb">64 GB</option>
+            <option value="128gb">128 GB</option>
+            <option value="256gb">256 GB</option>
           </select>
           <p class="description">
-            The iPhone 5s is a classic smartphone known for its compact design
-            and advanced features during its release. While it's an older model,
-            it still provides a reliable user experience.
+            ${currentProduct.description}
           </p>
         </article>
     `;
-    //Für jedes produkt neue kachel und wie daten dynamisch angezeigt werden sind HAUSAUFGABE          !!!!!!!!!!!!!!!
+  }
+};
+
+//Laptop Produkte mit API fetchen und auf der Seite anzeigen lassen
+
+const getLaptopProducts = async () => {
+  const response = await fetch(
+    "https://dummyjson.com/products/category/laptops",
+  );
+  const data = await response.json();
+  const products = data.products;
+  console.log(products);
+
+  const productList = document.querySelector(".product-grid");
+  productList.innerHTML = "";
+
+  for (let i = 0; i < products.length; i++) {
+    const currentProduct = products[i];
+    console.log(currentProduct);
+
+    productList.innerHTML += `
+        <article class="product-card">
+          <div class="image-box">
+            <img
+              class="phonepictures"
+              src="${currentProduct.thumbnail}"
+              alt="${currentProduct.title}"
+            />
+          </div>
+          <div class="product-header">
+            <h2>${currentProduct.title}</h2>
+            <div class="price-group">
+              <span class="price">${currentProduct.price}</span>
+              <img src="/assets/cart.png" class="cart-icon" alt="Warenkorb" />
+            </div>
+          </div>
+          <p class="description">
+            ${currentProduct.description}
+          </p>
+        </article>
+    `;
+  }
+};
+
+//Tablets auf der tablet.html seite anzeigen lassen
+
+const getTabletProducts = async () => {
+  const response = await fetch(
+    "https://dummyjson.com/products/category/tablets",
+  );
+  const data = await response.json();
+  const products = data.products;
+  console.log(products);
+
+  const productList = document.querySelector(".product-grid");
+  productList.innerHTML = "";
+
+  for (let i = 0; i < products.length; i++) {
+    const currentProduct = products[i];
+    console.log(currentProduct);
+
+    productList.innerHTML += `
+        <article class="product-card">
+          <div class="image-box">
+            <img
+              class="phonepictures"
+              src="${currentProduct.thumbnail}"
+              alt=${currentProduct.title}
+            />
+          </div>
+          <div class="product-header">
+            <h2>${currentProduct.title}</h2>
+            <div class="price-group">
+              <span class="price">${currentProduct.price}</span>
+              <img src="/assets/cart.png" class="cart-icon" alt="Warenkorb" />
+            </div>
+          </div>
+          <p class="description">
+            ${currentProduct.description}
+          </p>
+        </article>
+    `;
   }
 };
 
 //führt den JavaScript Code aus
+//Mit KI erstellt, da ich nicht wusste wie ich auf der Laptop Seite nur die Laptops angezeigt bekomme
 
 document.addEventListener("DOMContentLoaded", () => {
-  getSmartphoneProducts();
+  const path = window.location.pathname;
+
+  if (path.includes("laptop")) {
+    getLaptopProducts();
+  } else if (path.includes("tablet")) {
+    getTabletProducts();
+  } else {
+    getSmartphoneProducts();
+  }
 });

@@ -65,8 +65,8 @@ body {
 
 /*Produktbilder*/
 .phonepictures {
-  max-height: 120%;
-  max-width: 120%;
+  max-height: 110%;
+  max-width: 110%;
   object-fit: contain;
 }
 
