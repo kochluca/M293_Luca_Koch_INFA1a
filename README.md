@@ -9,3 +9,5 @@ Um das Javascript erfolgreich funktionieren zu lassen habe ich auch KI als Hilfs
 Ich habe auch KI benutzt, weil ich nicht gewusst habe, wie man nur ein Teil von dem Javascript Code auf einer HTML Seite anzeigt. Ich habe auf w3schools.com nach einer Lösung gesucht aber ich wurde leider nicht Fündig. Deswegen habe ich bei diesem Beispiel den Code von der KI abgeschrieben, nachdem die KI mir die Funktion des Codes erklärt hat.
 
 Leider konnte ich nicht alles von meinem JavaScript Code in meinem Erklärvideo erklären, da ich zu wenig Zeit hatte. Deswegen habe ich meiner Meinung nach die wichtigsten Infos von meinem Code erklärt und die Hintergrund-Aktivitäten nicht erklärt.
+
+Mein Video: https://github.com/user-attachments/assets/db475e1a-1824-413f-8636-3131f5665fd5
