@@ -34,7 +34,7 @@ const getSmartphoneProducts = async () => {
               <img src="/assets/cart.png" class="cart-icon" alt="Warenkorb" />
             </div>
           </div>
-          <select name="Speicherplatz">
+          <select name="Speicherplatz" title="speicherplatz auswählen">
             <option value="" disabled selected hidden>
               Speicherplatz auswählen
             </option>

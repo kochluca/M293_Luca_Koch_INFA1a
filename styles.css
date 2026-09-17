@@ -98,7 +98,7 @@ body {
 
 /*Einkaufskorb*/
 .cart-icon {
-  height: 24px;
+  height: 35px;
   width: auto;
 }
 
@@ -137,7 +137,7 @@ header a {
   text-decoration: none;
 }
 
-.header-index a:hover {
+a:hover {
   text-decoration: underline;
 }
 
@@ -241,6 +241,9 @@ footer {
   text-decoration: none;
   color: inherit;
   display: block;
+}
+.category-link a:hover {
+  text-decoration: underline;
 }
 
 .category-title {
