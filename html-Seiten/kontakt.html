@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Die Kontakt Seite von Tonys Elektro Schuppen. Bitte geben Sie uns eine Rückmeldung, wie die Website es Ihnen gefällt."
+    />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../kontakt.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <article class="header-index">
+          <a href="../index.html">
+            <p>
+              TONY'S ELEKTRO <br />
+              SCHUPPEN
+            </p>
+          </a>
+
+          <ul class="links">
+            <li>
+              <a href="smartphones.html">Smartphones</a>
+            </li>
+
+            <li>
+              <a href="tablets.html">Tablets</a>
+            </li>
+
+            <li>
+              <a href="laptops.html">Laptops</a>
+            </li>
+
+            <li>
+              <a href="kontakt.html" class="aktiv">Kontakt</a>
+            </li>
+          </ul>
+        </article>
+      </nav>
+    </header>
+
+    <main>
+      <!--Kontakt mit den Feldern um seine Daten reinzuschreiben-->
+      <section class="contact-section">
+        <h1>Kontakt</h1>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Dein Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="nachricht">Nachricht</label>
+            <textarea
+              id="nachricht"
+              name="nachricht"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group radio-group">
+            <label>Was denkst du über<br />unsere Preise?</label>
+
+            <div class="radio-options">
+              <label
+                ><input type="radio" name="preise" value="super_fair" checked />
+                super fair
+              </label>
+              <label
+                ><input type="radio" name="preise" value="okay" /> okay
+              </label>
+              <label
+                ><input type="radio" name="preise" value="teuer" /> teuer
+              </label>
+            </div>
+          </div>
+
+          <!--Absenden Button-->
+          <div class="button-container">
+            <button type="submit" class="SendButton">Absenden</button>
+            <!--Dankesagung Popup Message-->
+            <dialog id="meinPopup">
+              <h2>Danke!</h2>
+              <br />
+              <p>
+                Danke vielmals für Ihre Rückmeldung, <br />
+                hoffentlich hatten sie einen guten Aufenthalt. Wir würden uns
+                <br />
+                freuen Sie wieder einmal bei uns begrüssen zu dürfen.
+              </p>
+
+              <button type="button" id="close-Button">X</button>
+            </dialog>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <article class="footer-index">
+          <p>
+            <span class="oeffnung">Öffnungszeiten</span><br />
+            Mo - Do: 11 - 18:30 Uhr <br />
+            Fr - Sa: 11 - 17:00 Uhr <br />
+            So: geschlossen
+          </p>
+
+          <p class="zitat">
+            “Bei Tony's Elektroschuppen geht es nicht nur um <br />
+            Geräte, sondern um die Menschen dahinter: Ich <br />
+            liebe es, Ihnen die Technik zu zeigen, die ihr Leben <br />
+            bereichert.” <br />
+            - Tony
+          </p>
+
+          <p class="address">
+            <span class="oeffnung">Adresse</span> <br />
+            Tony's Elektro Schuppen <br />
+            Musterstrasse 22 <br />
+            6456 Musterhausen
+          </p>
+        </article>
+      </div>
+    </footer>
+  </body>
+</html>
