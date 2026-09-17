@@ -31,7 +31,7 @@ const getSmartphoneProducts = async () => {
             <h2>${currentProduct.title}</h2>
             <div class="price-group">
               <span class="price">${currentProduct.price}</span>
-              <img src="/assets/cart.png" class="cart-icon" alt="Warenkorb" />
+              <img src="assets/cart.png" class="cart-icon" alt="Warenkorb" />
             </div>
           </div>
           <select name="Speicherplatz" title="speicherplatz auswählen">
@@ -81,7 +81,7 @@ const getLaptopProducts = async () => {
             <h2>${currentProduct.title}</h2>
             <div class="price-group">
               <span class="price">${currentProduct.price}</span>
-              <img src="/assets/cart.png" class="cart-icon" alt="Warenkorb" />
+              <img src="assets/cart.png" class="cart-icon" alt="Warenkorb" />
             </div>
           </div>
           <p class="description">
@@ -122,7 +122,7 @@ const getTabletProducts = async () => {
             <h2>${currentProduct.title}</h2>
             <div class="price-group">
               <span class="price">${currentProduct.price}</span>
-              <img src="/assets/cart.png" class="cart-icon" alt="Warenkorb" />
+              <img src="assets/cart.png" class="cart-icon" alt="Warenkorb" />
             </div>
           </div>
           <p class="description">
